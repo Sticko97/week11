@@ -28,9 +28,16 @@ let r = prompt("Enter a radius.");
 
 function circleArea(radius)
 {
-    return Math.PI * radius * radius;
+    const radiusP = document.querySelector("#radius");
+    const resultP = document.querySelector("#result");
+    radiusP.textContent = radius;
+    let calculatedArea = Math.PI * radius * radius;
+    resultP.textContent = calculatedArea
+    return calculatedArea;  
 }
 
-let area = circleArea(r);
+let area = circleArea(r).toFixed(2);
+
 alert(`The area ${r} is ${area.toFixed(2)} `)
 
+radius.selectqueury(r)
