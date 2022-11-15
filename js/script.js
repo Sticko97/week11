@@ -16,9 +16,21 @@
 
 // greet();
 
-function greet(user, time = "night")
+// function greet(user, time = "day")
+// {
+//     console.log(`Good ${time} ${user}`);
+// }
+// greet("Stanley");
+// greet("Stanley", "Night");
+
+let r = prompt("Enter a radius.");
+// console.log(r)
+
+function circleArea(radius)
 {
-    console.log(`Good ${time} ${user}`);
+    return Math.PI * radius * radius;
 }
 
-greet("Stanley");
+let area = circleArea(r);
+alert(`The area ${r} is ${area.toFixed(2)} `)
+
