@@ -67,10 +67,10 @@ const listItems = document.querySelectorAll(".shopping li");
 function greenItem(item){
     for (let i = 0; i < listItems.length; i++){
         if ( listItems[i].textContent.includes("green")){
-            listItem[i].classList.add("green")
+            listItems[i].classList.add("green")
 
         }
     }
 }
 
-reenItem();
+greenItem();
